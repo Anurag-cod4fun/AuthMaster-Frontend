@@ -1,0 +1,197 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #0a0e27;
+  background-image: 
+    repeating-linear-gradient(0deg, rgba(0, 255, 0, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 0, 0.03) 3px),
+    repeating-linear-gradient(90deg, rgba(0, 255, 0, 0.03) 0px, transparent 1px, transparent 2px, rgba(0, 255, 0, 0.03) 3px);
+  padding: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #1a1d2e;
+  border: 1px solid #00ff88;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2);
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  color: #00ff88;
+  font-size: 32px;
+  font-family: 'Courier New', monospace;
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-logout {
+  padding: 10px 24px;
+  background: #ff4444;
+  color: #0a0e27;
+  border: 1px solid #ff4444;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-logout:hover {
+  background: #ff0000;
+  box-shadow: 0 0 15px rgba(255, 68, 68, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  padding: 10px 24px;
+  background: linear-gradient(135deg, #00ff88, #00d4aa);
+  color: #0a0e27;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+  transform: translateY(-2px);
+}
+
+.dashboard-content {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.info-card {
+  background: #1a1d2e;
+  border: 1px solid #00ff88;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
+  transition: all 0.3s;
+}
+
+.info-card:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+  transform: translateY(-2px);
+}
+
+.info-card h2 {
+  margin: 0 0 15px 0;
+  color: #ff00de;
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+  border-bottom: 2px solid #ff00de;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-card h3 {
+  margin: 15px 0 10px 0;
+  color: #00ffff;
+  font-size: 16px;
+  font-family: 'Courier New', monospace;
+}
+
+.status-success {
+  color: #00ff88;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+  margin: 10px 0;
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.token-info {
+  margin-top: 15px;
+}
+
+.token-display, .data-display {
+  background: #0a0e27;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  word-break: break-all;
+  border: 1px solid #00ff88;
+  margin: 10px 0;
+  overflow-x: auto;
+  color: #00ffff;
+  box-shadow: inset 0 0 10px rgba(0, 255, 136, 0.1);
+}
+
+.data-display {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  color: #00ff88;
+  font-family: 'Courier New', monospace;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.error-message {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff4444;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ff4444;
+  font-family: 'Courier New', monospace;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+}
+
+.testing-section {
+  background: rgba(0, 255, 136, 0.05);
+  border-color: #00ff88;
+}
+
+.testing-section p {
+  color: #a8b2d1;
+  margin: 10px 0;
+  font-family: 'Courier New', monospace;
+}
+
+/* Scrollbar styling */
+.data-display::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.data-display::-webkit-scrollbar-track {
+  background: #1a1d2e;
+}
+
+.data-display::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 4px;
+}
+
+.data-display::-webkit-scrollbar-thumb:hover {
+  background: #00d4aa;
+}
