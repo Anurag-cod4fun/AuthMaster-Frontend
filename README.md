@@ -62,19 +62,19 @@ This platform is designed for **security professionals, students, and developers
 ## 📸 Screenshots
 
 ### Home Page - Challenge Briefing
-![Master Auth Home Page](./public/screenshots/home-page.png)
+![Master Auth Home Page](https://github.com/Anurag-cod4fun/Images/blob/master/DevEndpoint.png?raw=true)
 *Terminal-style home page with mission briefing and challenge objectives*
 
 ### Registration Page
-![Registration Form](./public/screenshots/register-page.png)
+![Registration Form](https://github.com/Anurag-cod4fun/Images/blob/master/AuthRegister.png?raw=true)
 *Create new test accounts with custom credentials*
 
 ### Login Page
-![Login Portal](./public/screenshots/login-page.png)
+![Login Portal](https://github.com/Anurag-cod4fun/Images/blob/master/AuthLogin.png?raw=true)
 *Secure login interface with JWT token authentication*
 
 ### Dashboard - Token Analysis
-![Dashboard](./public/screenshots/dashboard.png)
+![Dashboard](https://github.com/Anurag-cod4fun/Images/blob/master/AuthDashboard.png?raw=true)
 *View authentication tokens, user data, and API responses*
 
 ---
